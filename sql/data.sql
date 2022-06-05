@@ -1,0 +1,1 @@
+insert into authors (firstname,lastname) VALUES ('Isaac' ,'Asimov'), ('Ray', 'Bradbury'), ('JRR','Tolkien');

@@ -22,6 +22,11 @@ dependencies {
 
 	implementation("com.expediagroup", "graphql-kotlin-spring-server", "3.6.8") // graphql-kotlin
 
+	implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
+
+	runtimeOnly("dev.miku:r2dbc-mysql") // MySQL database r2dbc driver
+	runtimeOnly("mysql:mysql-connector-java") // MySQL database
+
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 
 
