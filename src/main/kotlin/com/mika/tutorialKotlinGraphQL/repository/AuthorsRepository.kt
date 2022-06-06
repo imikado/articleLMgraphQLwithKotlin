@@ -17,6 +17,9 @@ interface AuthorsRepository : ReactiveCrudRepository<Author, Long> {
     @Query("SELECT id, firstname, lastname FROM authors WHERE id = :id")
     override fun findById(id: Long): Mono<Author>
 
+    @Query("SELECT id, firstname, lastname FROM authors WHERE id IN ( :idList )")
+    fun findListByIdList(idList: List<Long>): Flux<Author>
+
 
 
 }
